@@ -1,0 +1,507 @@
+body{
+	/*height: 3000px;*/
+	background-image: url(../image/1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: 0 -100px;
+}
+
+header nav{
+	width: 100%;
+	height: 50px;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	z-index: 9;
+}
+
+header nav .title{
+	width: 1300px;
+	height: 50px;
+	margin: 0 auto;
+	border-top: 1px solid black;
+}
+
+header nav .title .logo{
+	width: 3.5%;
+	height: 100%;
+	/*background-color: green;*/
+	float: left;
+	margin-top: 7px;
+/*	line-height: 55px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "butler";*/
+}	
+
+header nav .title span{
+	line-height: 50px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "butler";
+}
+
+header nav .title .nav{
+	width: 385px;
+	height: 100%;
+	/*background-color: blue;*/
+	float: right;
+}	
+
+header nav .title .nav ul li{
+	color: white;
+	width: 77px;
+/*	background-color: #4EB2D6;*/
+	height: 50px;
+	float: left;
+	font-weight: bold;
+	text-align: center;
+	font-size: 14px;
+	line-height: 50px;
+	transition: background 1s; /*背景颜色过渡*/
+}
+header nav .title .nav ul li:hover{
+	background-color: #4EB2D6;
+}
+header .content{
+	width: 100%;
+	height: 700px;
+	background: rgba(0,0,0,0.5);
+	border-top: 1px solid black;
+}
+header .content p{
+	width: 800px;
+	margin: 240px auto 0;
+	color: white;
+	font-size: 46px;
+/*	font-weight: bold;*/
+	text-align: center;
+	line-height: 1.5em;
+}
+header .content .btn{
+	width: 245px;
+	height: 62px;
+	border: 1px solid white;
+	margin: 50px auto 0;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 15px; /*矩形变圆角，后面加半径，加4个值就是4个角*/
+	cursor: pointer;
+	transition: background 1s;
+}
+header .content .btn:hover{
+	background-color: #4EB2D6;
+}
+header .content img{
+	display: block;
+	margin: 50px auto 0;
+/*	width: 0;
+	height: 0;*/
+	
+	/*border-bottom: 0;
+	border-top: 20px solid white;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;*/
+	/*上面的一堆都是三角的制作方法，width不是0的时候是梯形
+	transparent的意思是透明的*/
+	animation: move 1s infinite; 
+	/*上面的这个东西是定义一个动画，move可以随意起名字
+	1s的意思是整个动画完成的时间，后面的infinite是无
+	限的意思*/
+}
+@keyframes move{
+	0%{margin-top: 20px;}
+	50%{margin-top: 50px;}
+	100%{margin-top: 20px;}
+}
+	/*上面的这个是动画的规则，从0%到100%的过程全部状态*/
+
+
+
+
+/*内容*/
+/*skill*/
+.skill_box{
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: rgba(60,70,80,0.8);
+	text-align: center;
+	line-height: 50px;
+
+}
+.skill_box h3{
+	width: 800px;
+	height: 40px;
+	border-bottom: 2px solid white;
+	margin: 0 auto;
+/*	background: red;*/
+	line-height: 40px;
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 15px;
+}
+.skill_box p{
+	width: 1050px;
+	margin: 20px auto 0;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	line-height: 2.5em;
+}
+
+.skill_box ul{
+	width: 1050px;
+	margin: 20px auto 0;
+	overflow: hidden;
+/*	background-color: green;*/
+}
+.skill_box ul li{
+	width: 154px;
+	height: 195px;
+/*	background-color: red;*/
+	float: left;
+	margin-right: 21px;
+}
+.skill_box ul .last{
+	margin-right: 0;
+}
+
+.skill_box ul li div{
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+/*	background: purple;*/
+	border-radius: 50%;
+	border: 15px solid black;
+	color: white;
+	text-align: center;
+	line-height: 120px;
+}
+.skill_box ul li div b{
+	font-size: 50px;
+}
+
+.skill_box ul li div i{
+	font-size: 25px;
+}
+.skill_box ul li div:hover{
+	transition:transform 1s;
+	transform:rotateY(360deg);
+}
+/*transition表示过度，transform表示动画，rotate表示
+旋转，X Y Z表示沿着哪个轴旋转，360deg表示旋转的度数
+*/
+
+.skill_box ul li:nth-child(1) div{
+	background: #88c14c;
+}
+.skill_box ul li:nth-child(2) div{
+	background: #ef4330;
+}
+.skill_box ul li:nth-child(3) div{
+	background: #4eb2d6;
+}
+.skill_box ul li:nth-child(4) div{
+	background: #efa330;
+}
+.skill_box ul li:nth-child(5) div{
+	background: #ed6c44;
+}
+.skill_box ul li:nth-child(6) div{
+	background: #4EB2D6;
+}
+
+/*上面的一堆表示填充背景颜色，nth-child(x)表示选择
+ul中的哪一个li中的div，*/
+
+.skill_box ul li span{
+	color:white;
+	font-size: 20px;
+	margin-top: 15px;   
+}
+
+
+
+
+/*works*/
+.works_box{
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 60px;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	line-height: 50px;
+
+}
+.works_box h3{
+	width: 650px;
+	height: 40px;
+	border-bottom: 2px solid white;
+	margin: 0 auto;
+/*	background: red;*/
+	line-height: 40px;
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 15px;
+}
+.works_box p{
+	width: 950px;
+	margin: 20px auto 0;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.6em;
+}
+
+.works_box .p1{
+	font-size: 24px;
+}
+.works_box .tab{
+	width: 1070px;
+	height: 465px;
+/*	background: red;*/
+	margin: 10px auto 0;
+}
+.works_box .tab .button_box{
+	width: 335px;
+	height: 40px;
+/*	background: green;*/
+	margin: 0 auto;
+}
+.works_box .tab .button_box .button{
+	width: 78px;
+	height: 38px;
+	border: 1px solid white;
+	color: white;
+	text-align: center;
+	line-height: 36px;
+	font-size: 20px;
+	border-radius: 4px;
+	float: left;
+	margin-right: 5px;
+	cursor: pointer;
+
+}
+.works_box .tab .button_box .button:nth-child(4){
+	margin-right: 0;
+}
+
+.works_box .tab .content_box{
+	width: 1070px;
+	height: 400px;
+	margin-top: 25px;
+	/*background: red;*/
+}
+.works_box .tab .content_box ul{
+	width: 1070px;
+	height: 400px;
+/*	background: green;*/
+}
+
+.works_box .tab .content_box ul li{
+	width: 260px;
+	height: 195px;
+	background: purple;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.works_box .tab .content_box ul li:nth-child(4){
+	margin-right:0;
+}
+.works_box .tab .content_box ul li:nth-child(5){
+	margin-bottom:0;
+}
+.works_box .tab .content_box ul li:nth-child(6){
+	margin-bottom:0;
+}
+.works_box .tab .content_box ul li:nth-child(7){
+	margin-bottom:0;
+}
+.works_box .tab .content_box ul li:nth-child(8){
+	margin-bottom:0;
+	margin-right:0;
+}
+
+.works_box .tab .content_box ul:nth-child(2){
+	display: none;
+}
+.works_box .tab .content_box ul:nth-child(3){
+	display: none;
+}
+.works_box .tab .content_box ul:nth-child(4){
+	display: none;
+}
+
+.works_box .tab .content_box ul li img{
+	transition: transform 1s;
+}
+
+.works_box .tab .content_box ul li img:hover{
+	transform:scale(1.2);   
+	 /*scale()是缩放*/   /*skew()拉伸*/
+}
+
+.about_box{
+	width: 100%;
+	background: #2c3138;
+}
+.about_box .line{
+	width: 100%;
+	overflow: hidden;
+}
+
+.about_box .line .content1{
+	width: 45%;
+	position: relative;
+	float: left;
+	/*下面这个的作用是消除图片下面的黑边*/
+	font-size: 0;
+}
+.about_box .line .content1 img{
+	width: 100%;
+}
+.about_box .line .content1 .mask{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0; top: 0;
+}
+.about_box .line .content1 .mask p{
+	width: 70%;
+	color: white;
+	font-size: 40px;
+	margin: 170px auto 0;
+	font-weight: bold;
+	text-align: center;
+
+}
+.about_box .line .content2{
+	width: 55%;
+	float: left;
+}
+
+.about_box .line .content2 .graduation{
+	width: 70%;
+	color: white;
+	margin-top: 90px;
+	margin-left: 45px;
+}
+
+.about_box .line .content2 .graduation h3{
+	font-size: 24px;
+	line-height: 1.5em;
+}
+.about_box .line .content2 .graduation p{
+	font-size: 18px;
+	line-height: 1.5em; 
+	margin-top: 18px;
+}
+
+
+
+
+.about_box .line1{
+	width: 100%;
+	overflow: hidden;
+}
+
+.about_box .line1 .content2{
+	width: 55%;
+	position: relative;
+	float: left;
+	/*下面这个的作用是为了消除图片下面的黑边*/
+	font-size: 0;
+}
+
+.about_box .line1 .content2 img{
+	width: 100%;
+}
+.about_box .line1 .content2 .mask{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0; top: 0;
+}
+.about_box .line1 .content2 .mask p{
+	width: 70%;
+	color: white;
+	font-size: 40px;
+	margin: 170px auto 0;
+	font-weight: bold;
+	text-align: center;
+
+}
+.about_box .line1 .content1{
+	width: 45%;
+	float: left;
+}
+
+.about_box .line1 .content1 .graduation{
+	width: 70%;
+	color: white;
+	margin-top: 90px;
+	margin-left: 45px;
+}
+
+.about_box .line1 .content1 .graduation h3{
+	font-size: 24px;
+	line-height: 1.5em;
+}
+.about_box .line1 .content1 .graduation p{
+	font-size: 18px;
+	line-height: 1.5em; 
+	margin-top: 18px;
+}
+
+
+
+
+/*footer*/
+footer{
+	width: 100%;
+	padding: 30px 0;
+}
+footer h3{
+	width:630px;
+	height: 100px;
+/*	background-color: red;*/
+	margin: 0 auto;
+}
+footer h3 span{
+	float: left;
+	width: 210px;
+/*	background-color: green;*/
+	border-bottom: 2px solid white;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
+
+footer h3 .contact{
+	border-bottom: none;
+	margin-top: 11px;
+}
+footer h3 .line_through{
+	margin-top: 40px;
+}
+
+.backtop{
+	width: 70px;
+	height: 70px;
+/*	background-color: yellow;*/
+	position: fixed;
+	right: 50px;
+	bottom: 90px;
+	cursor: pointer;
+}
