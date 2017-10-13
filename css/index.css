@@ -60,6 +60,7 @@ header nav .title .nav ul li{
 	text-align: center;
 	font-size: 14px;
 	line-height: 50px;
+	cursor: pointer;
 	transition: background 1s; /*背景颜色过渡*/
 }
 header nav .title .nav ul li:hover{
@@ -99,6 +100,7 @@ header .content .btn:hover{
 header .content img{
 	display: block;
 	margin: 50px auto 0;
+	cursor: pointer;
 /*	width: 0;
 	height: 0;*/
 	
@@ -282,13 +284,17 @@ ul中的哪一个li中的div，*/
 	color: white;
 	text-align: center;
 	line-height: 36px;
-	font-size: 20px;
+	font-size: 16px;
 	border-radius: 4px;
 	float: left;
 	margin-right: 5px;
 	cursor: pointer;
 
 }
+.works_box .tab .button_box .button1{
+	background: #4EB2D6;
+}
+
 .works_box .tab .button_box .button:nth-child(4){
 	margin-right: 0;
 }
@@ -496,6 +502,10 @@ footer h3 .line_through{
 	margin-top: 40px;
 }
 
+footer img{
+	width: 40%;
+	margin-left: 28%;
+}
 .backtop{
 	width: 70px;
 	height: 70px;
